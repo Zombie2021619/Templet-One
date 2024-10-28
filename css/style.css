@@ -1,0 +1,140 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.content {
+    flex: 1; /* جعل المحتوى يستحوذ على المساحة المتاحة */
+    padding: 20px;
+    overflow: hidden; /* يمنع حدوث سكرول */
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.header {
+    background-color: #c30505;
+}
+
+.titleHome h1{
+    text-align: center;
+    color: white;
+}
+.bar ul a{
+    color: white;
+    text-decoration: none;
+}
+.bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons i{
+    color: white;
+    font-size: 30px;
+    top: 0%;
+    left: 13px;
+    position: absolute;
+}
+.icons2 i{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+footer {
+    background-color: #c30505;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 50px 50px 0px 0px;
+    z-index: 1;
+}
+.icons3 i { 
+    color: white;
+    font-size: 22px;
+}
+.icons3 {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-right: 24px;
+    margin-left: 30px;
+}
+
+.logoF {
+    position: absolute;
+    left: 50px;
+    top: 0px;
+}
+.logoS {
+    position: absolute;
+    right: 31px;
+    top: -5px;
+}
+
+.icon-item {
+    color: white;
+    display: grid;
+    font-size: 8px;
+}
+
+span {
+    text-decoration: none;
+}
+
+.containerCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    z-index: 0;
+}
+
+.row {
+    display: flex; 
+    justify-content: center;
+    margin: 10px 0; 
+}
+
+.card {
+    background-color: transparent; 
+    border: 1px solid transparent; 
+    border-radius: 8px;
+    margin: 5px; 
+    padding: 20px;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: border 0.2s, transform 0.2s;
+}
+
+.card:hover {
+    border: 2px solid red;
+    transform: translateY(-5px);
+}
